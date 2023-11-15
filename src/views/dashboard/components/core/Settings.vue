@@ -204,9 +204,9 @@
         '#E91E63',
         '#FF5252',
       ],
-      image: 'https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-1.jpg',
+      image: 'https://demos.creative-tim.com/vue-material-dashboard-2/img/team-1.0e461794.jpg',
       images: [
-        'https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-1.jpg',
+        'https://demos.creative-tim.com/vue-material-dashboard-2/img/team-1.0e461794.jpg',
         'https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-2.jpg',
         'https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-3.jpg',
         'https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-4.jpg',
