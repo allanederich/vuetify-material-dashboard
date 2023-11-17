@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Auth from '@/views/Auth/Auth'
+import Signin from '@/views/Auth/Signin'
+import SigninIdentifier from '@/views/Auth/SigninIdentifier'
+import SigninPassword from '@/views/Auth/SigninPassword'
+import Signup from '@/views/Auth/Signup'
+
 Vue.use(Router)
 
 export default new Router({
@@ -58,5 +64,34 @@ export default new Router({
         },
       ],
     },
+    {
+      path: '/auth',
+      component: Auth,
+      children: [
+        {
+          path: '*',
+          redirect: { name: 'signin' }
+        },
+        {
+          path: 'signin',
+          component: Signin,
+          children: [
+            {
+              path: 'identifier',
+              name: 'signin',
+              component: SigninIdentifier
+            }, {
+              path: 'password',
+              name: 'password',
+              component: SigninPassword
+            }
+          ]
+        }, {
+          path: 'signup',
+          component: Signup,
+          name: 'signup'
+        }
+      ]
+    }
   ],
 })

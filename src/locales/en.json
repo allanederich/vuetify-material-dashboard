@@ -17,7 +17,6 @@
   "grid": "Grid System",
   "icons": "Icons",
   "lock": "Lock Screen Page",
-  "login": "Login Page",
   "maps": "Maps",
   "multi": "Multi Level Collapse",
   "notifications": "Notifications",
@@ -41,5 +40,43 @@
   "user": "User Profile",
   "vforms": "Validation Forms",
   "widgets": "Widgets",
-  "wizard": "Wizard"
+  "wizard": "Wizard",
+  "auth": {
+    "sign-in": {
+      "create-account": "Criar conta",
+      "forgot-email": "Forgot email?",
+      "label": "Email",
+      "learn-more": "Saiba mais",
+      "next": "Próximo",
+      "private": "Não é o seu computador? Use a janela privada para fazer login.",
+      "subtitle": "Entre usando seu email.",
+      "title": "Entrar"
+    },
+    "sign-in-password": {
+      "enter-password": "Enter your password",
+      "forgot-password": "Forgot password?",
+      "next": "Próximo",
+      "title": "Welcome"
+    },
+    "sign-up": {
+      "create": "Create your Vuetify Account",
+      "email": "Your email address",
+      "email-hint": "You'll need to confirm that this email belongs to you.",
+      "firstname": "First name",
+      "instead": "Sign in instead",
+      "lastname": "Last name",
+      "next": "Next",
+      "password": "Password",
+      "password-props": "Use 8 or more characters with a mix of letters, numbers & symbols",
+      "title": "Vuetify"
+    }
+  },
+  "login": {
+    "footer": {
+      "help": "Help",
+      "language": "English (United States)",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  }
 }

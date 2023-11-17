@@ -6,8 +6,8 @@ $list-item-dense-title-font-weight: initial;
 $fab-icon-sizes: ( small: 20 );
 $btn-font-sizes: ( default: 1rem, large: 1rem );
 $btn-sizes: ( default: 41, large: 54 );
-$btn-letter-spacing: 0;
-$btn-font-weight: 400;
+// $btn-letter-spacing: 0;
+// $btn-font-weight: 400;
 $card-text-font-size: 16px;
 
 $headings: (
@@ -29,6 +29,39 @@ $headings: (
   ),
   'h5': ( 'size': 1.0625rem ),
   'h6': ( 'size': .75rem ),
-  'subtitle-2': ( 'size': 1rem ),
-  'overline': ( 'letter-spacing': 0 )
+  // 'subtitle-2': ( 'size': 1rem ),
+  'overline': ( 'letter-spacing': 0, 'weight': 500 ),
+  'subtitle-1': (
+    'weight': normal,
+  ),
+  'subtitle-2': (
+    'weight': 500,
+  ),
+  'body-1': (
+    'weight': 400,
+    'letter-spacing': normal
+  ),
+  'body-2': (
+    'letter-spacing': normal
+  ),
+  'button': (
+    'weight': 700,
+  ),
+  'caption': (
+    'weight': 400,
+  )
 );
+
+$material-light: (
+  'text-fields': (
+    // 'filled': rgba(map-get($shades, 'black'), 0.06),
+    // 'filled-hover': rgba(map-get($shades, 'black'), 0.12),
+    'outlined': #dadce0,
+    'outlined-hover': #d1d6df
+    // 'outlined-disabled': rgba(map-get($shades, 'black'), 0.26),
+    // 'outlined-hover': rgba(map-get($shades, 'black'), 0.86)
+  ),
+);
+
+$btn-letter-spacing: 0.025em;
+$btn-font-weight: 700;

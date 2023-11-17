@@ -7,8 +7,10 @@ Vue.use(VueI18n)
 
 const messages = {
   en: {
-    ...require('@/locales/en.json'),
-    $vuetify: en,
+    $vuetify: {
+      en,
+      ...require('@/locales/en.json'),
+    },
   },
 }
 
