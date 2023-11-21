@@ -49,8 +49,9 @@
       "learn-more": "Saiba mais",
       "next": "Próximo",
       "private": "Não é o seu computador? Use a janela privada para fazer login.",
-      "subtitle": "Entre usando seu email.",
-      "title": "Entrar"
+      "subtitle": "Entre usando seu email:",
+      "title": "Entrar",
+      "google": "Entrar com Google"
     },
     "sign-in-password": {
       "enter-password": "Enter your password",

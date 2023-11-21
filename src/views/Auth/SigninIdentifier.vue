@@ -1,9 +1,23 @@
 <template>
   <div>
     <div class="text-center">
-      <h1 class="headline mb-2">
-        {{ $vuetify.lang.t('$vuetify.auth.sign-in.title') }}
-      </h1>
+      <v-btn class="text-none" color="primary" outlined @click="next">
+        <v-img src="https://logopng.com.br/logos/google-37.png" width="24" class="mr-3" />
+        {{ $vuetify.lang.t('$vuetify.auth.sign-in.google') }}
+      </v-btn>
+    </div>
+
+    <br />
+
+    <div class="d-flex text-center justify-space-between" style="display: flex;">
+      <hr style="width: 42%; margin-top: 10px; border: 0.5px solid #ccc;">
+      ou
+      <hr style="width: 42%; margin-top: 10px; border: 0.5px solid #ccc;">
+    </div>
+
+    <br />
+
+    <div class="text-left" style="height: 30px;">
       <span class="d-inline-block mb-8">{{ $vuetify.lang.t('$vuetify.auth.sign-in.subtitle') }}</span>
     </div>
 
@@ -20,10 +34,6 @@
         :disabled="disabled"
         :error-messages="error"
       />
-      <!-- <a
-        href="#"
-        class="d-inline-block text-body-2 text-decoration-none font-weight-bold mb-8"
-      >{{ $vuetify.lang.t('$vuetify.auth.sign-in.forgot-email') }}</a> -->
     </v-form>
 
     <div class="text-body-2 text--secondary mb-8">
@@ -34,15 +44,6 @@
       >{{ $vuetify.lang.t('$vuetify.auth.sign-in.learn-more') }}</a>
     </div>
     <div class="d-flex justify-space-between">
-      <v-btn
-        class="text-none letter-spacing-0"
-        style="margin-left: -16px;"
-        color="primary"
-        text
-        @click="$router.push({ name: 'signup' })"
-      >
-        {{ $vuetify.lang.t('$vuetify.auth.sign-in.create-account') }}
-      </v-btn>
       <v-btn
         class="text-none"
         style="min-width: 88px;"

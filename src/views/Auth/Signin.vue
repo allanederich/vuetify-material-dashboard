@@ -5,13 +5,13 @@
         <img
           src="https://firebasestorage.googleapis.com/v0/b/eagle-mkt.appspot.com/o/Eagle%20Mkt%20-%20Logotipo.png?alt=media&token=b7052351-f794-432f-84b2-73d951e68c2d"
           alt="Vuetify Logo"
-          width="24"
+          width="64"
           style="vertical-align: middle;"
           class="mr-1"
         >
-        <span class="font-family-body">Eagle Mkt</span>
       </span>
     </div>
+    <br />
     <div class="transition-wrapper">
       <transition :name="transitionName">
         <router-view @next="$emit('next', $event)" />

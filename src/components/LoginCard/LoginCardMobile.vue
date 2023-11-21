@@ -1,8 +1,22 @@
 <template>
-  <div class="d-flex flex-column h-100 w-100 pa-6">
-    <div class="flex-grow-1">
-      <slot />
-    </div>
+  <div>
+    <v-card
+      class="auth-card"
+      :class="{ signup: $route.name === 'signup' }"
+      style="width: 100%;"
+      outlined
+      :disabled="disabled"
+    >
+      <v-progress-linear
+        v-if="loading"
+        indeterminate
+        absolute
+      />
+
+      <div class="pa-10">
+        <slot />
+      </div>
+    </v-card>
     <login-footer />
   </div>
 </template>
@@ -13,6 +27,16 @@ import LoginFooter from './LoginFooter'
 export default {
   components: {
     LoginFooter
+  },
+  props: {
+    loading: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>

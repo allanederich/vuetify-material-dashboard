@@ -1,16 +1,20 @@
 <template>
-  <v-container
-    class="fill-height justify-center"
-    :class="{ 'align-start': $vuetify.breakpoint.xsOnly }"
-    fluid
+  <v-parallax
+    src="https://www.nsgarder.dk/wp-content/uploads/2018/09/167-black-leather-2560x1600-minimalistic-wallpaper.jpg"
+    style="height: 100%;"
   >
-    <login-card
-      :loading="loading"
-      :disabled="disabled"
+    <v-container
+      class="fill-height justify-center"
+      fluid
     >
-      <router-view @next="onNext" />
-    </login-card>
-  </v-container>
+      <login-card
+        :loading="loading"
+        :disabled="disabled"
+      >
+        <router-view @next="onNext" />
+      </login-card>
+    </v-container>
+  </v-parallax>
 </template>
 
 <script>
@@ -45,5 +49,9 @@ export default {
 
   .text-decoration-none {
     text-decoration: none !important;
+  }
+
+  .v-parallax__image-container > img {
+    transform: scale(2) !important;
   }
 </style>
